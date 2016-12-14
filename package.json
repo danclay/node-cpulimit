@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Limit the CPU usage of a process.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bin": {
     "cpulimitjs": "./bin/index.js"
   },
@@ -15,7 +12,6 @@
     "child_pids": "^1.0.0",
     "commander": "^2.9.0",
     "expand-tilde": "^1.2.0",
-    "node-priority": "^0.1.5",
     "ps-man": "^1.1.3"
   }
 }

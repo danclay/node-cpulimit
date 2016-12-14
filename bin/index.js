@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var limiter = require('../lib'),
+var limiter = require('../index'),
     program = require('commander'),
     expandTilde = require('expand-tilde');
 
@@ -90,5 +90,3 @@ limiter.createProcessFamily(options, function(err, processFamily) {
         }
     });
 });
-
-
