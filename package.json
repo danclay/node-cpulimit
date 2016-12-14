@@ -1,6 +1,6 @@
 {
   "name": "cpulimit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Limit the CPU usage of a process.",
   "main": "index.js",
   "bin": {
