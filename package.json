@@ -6,6 +6,10 @@
   "bin": {
     "cpulimitjs": "./bin/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vangelov/cpulimitjs"
+  },
   "author": "Vladimir Angelov",
   "license": "MIT",
   "dependencies": {
