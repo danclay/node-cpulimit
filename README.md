@@ -6,7 +6,7 @@ A module which limits the CPU usage of a process. Useful when your computer is p
 
 ### As a program
 
-`npm install -g cpulimit.js`
+`npm install -g cpulimit`
 
 ```
 cpulimit -l <percent> [-w <work-dir>] [-i] (-p <process id> | -c <command> | -- <command> <args>)
@@ -25,10 +25,10 @@ cpulimit -l <percent> [-w <work-dir>] [-i] (-p <process id> | -c <command> | -- 
 
 ### As a library
 
-`npm install --save cpulimit.js`
+`npm install --save cpulimit`
 
 ```javascript
-var limiter = require('cpulimit.js');
+var limiter = require('cpulimit');
 
 var options = {
     limit: 20,
