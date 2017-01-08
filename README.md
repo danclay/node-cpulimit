@@ -1,4 +1,4 @@
-# cpulimit.js
+# node-cpulimit
 
 A module which limits the CPU usage of a process. Useful when your computer is performing some heavy work that takes too much of the CPU cycles but you want to perform other tasks. It works by sending SIGSTOP and SIGCONT signals at regular intervals depending on the specified limit.
 
