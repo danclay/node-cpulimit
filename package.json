@@ -4,11 +4,11 @@
   "description": "Limit the CPU usage of a process.",
   "main": "index.js",
   "bin": {
-    "cpulimitjs": "./bin/index.js"
+    "cpulimit": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vangelov/cpulimitjs"
+    "url": "https://github.com/vangelov/node-cpulimit"
   },
   "author": "Vladimir Angelov",
   "license": "MIT",
