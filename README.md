@@ -57,7 +57,7 @@ limiter.createProcessFamily(options, function(err, processFamily) {
   * `limit` (required) the CPU usage as a percent (0 - 100)
   * `includeChildren` also limit child processes
   * `pid` limit by process id
-  * `cmd` limit by command name
+  * `command` limit by command name
   * `spawn` object with the following properties:
     * `command` command name
     * `args` array with the arguments
