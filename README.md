@@ -63,7 +63,7 @@ limiter.createProcessFamily(options, function(err, processFamily) {
   * `spawn` object with the following properties:
     * `command` command name
     * `args` array with the arguments
-    * `cwd` working directory
+    * `spawnOptions` child_process spawn options
 
 ## Similar projects
 
