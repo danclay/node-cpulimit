@@ -16,7 +16,7 @@ function createProcessFamily(options, callback) {
     });
 }
 
-function limit(processFamily, options, callback) {
+function limit(processFamily, options, exitedCallback, dataCallback) {
     var running = true,
         runningTime = MILS_IN_SECOND * (options.limit / 100),
         idleTime = MILS_IN_SECOND - runningTime,
@@ -34,6 +34,10 @@ function limit(processFamily, options, callback) {
     parentProcess.on('exit', function(code, signal) {
         stop();
     });
+
+	parentProcess.stdout.on('data', data => {
+		dataCallback(data.toString())
+	})
 
     function next() {
         processFamily.refresh(function() {
@@ -55,7 +59,7 @@ function limit(processFamily, options, callback) {
 
     function stop(err) {
         clearTimeout(timeoutId);
-        callback(err);
+        exitedCallback(err);
     }
 }
 

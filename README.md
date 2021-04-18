@@ -49,7 +49,9 @@ limiter.createProcessFamily(options, function(err, processFamily) {
         else {
             console.log('Done.');
         }
-    });
+    }, function(data) {
+		console.log(data);
+	});
 });
 ```
 
